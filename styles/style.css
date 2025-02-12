@@ -19,6 +19,7 @@
 .about {
   color: #01acfd;
 }
+
 .facilities {
   color: #05d4df;
 }
@@ -318,9 +319,31 @@ footer {
 .first .dis {
   font-size: 20px;
   font-weight: 400;
-  width: 400px;
+  max-width: 400px;
 }
-
+.sec p {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.sec .t {
+  font-size: 20px;
+  font-weight: 500;
+}
+.third {
+  color: white;
+  font-size: 24px;
+}
+.third ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 20px;
+}
+.third ul li {
+  list-style: none;
+}
 @media only screen and (max-width: 576px) {
   .right-nav i {
     display: block;
@@ -333,7 +356,8 @@ footer {
   .name,
   nav,
   .right-nav .btn,
-  .arrow {
+  .arrow,
+  .main-card {
     display: none;
   }
   .hero {
@@ -372,5 +396,32 @@ footer {
   }
   .card {
     padding: 36px 28px;
+  }
+  .side-card {
+    margin: 0 55px;
+  }
+  .side-card p {
+    font-size: 9px;
+  }
+  .side-card-desc .date {
+    position: absolute;
+    font-size: 9px;
+    top: 18%;
+    left: 5%;
+    border: solid 1px rgb(60, 216, 232);
+    border-radius: 47px;
+    background: rgb(60, 216, 232);
+    padding: 2px 1px;
+  }
+  .foot {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .foot-logo p {
+    font-size: 35px;
+  }
+  .foot-logo .dis {
+    font-size: 16px;
+    margin: 0;
   }
 }
